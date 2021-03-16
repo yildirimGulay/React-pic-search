@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-`yarn add @material-ui/core` Material library add
+
+html add => <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+
+``yarn add @material-ui/icons`` Material icon
+
+``import {Container, Typography} from '@material-ui/core';`` App.js aded
+
+`` <Container maxWidth="sm">
+      <Typography 
+        component="div" 
+          style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+  </Container>''  Function aded
