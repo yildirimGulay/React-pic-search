@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputBase from '@material-ui/core/InputBase';
@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SearchBar() {
+ const [term, setTerm]=useState(' ');
+console.log(`term`,term)
+
   const classes = useStyles();
 
   return (
@@ -36,6 +39,8 @@ export default function SearchBar() {
       <InputBase
         className={classes.input}
         placeholder="Search "
+        value={term}
+        onChange={(e)=>setTerm(e.target.value)}
         
       />
        <Divider className={classes.divider} orientation="vertical" />
