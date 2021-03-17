@@ -27,14 +27,19 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SearchBar() {
+export default function SearchBar({gonder}) {
  const [term, setTerm]=useState(' ');
+
+const onFormSubmit=(event)=> {
+    event.preventDefault();
+    gonder(term);
+}
 console.log(`term`,term)
 
   const classes = useStyles();
 
   return (
-    <Paper component="form" className={classes.root}>
+    <Paper component="form" onSubmit={onFormSubmit} className={classes.root}>
       
       <InputBase
         className={classes.input}
