@@ -4,11 +4,11 @@ import React from 'react';
 
 const ImageCard = ({desc, url}) => {
     return (
-        <div>
+        
            <Card>
                 <img alt= {desc} src={url}/>
            </Card>
-        </div>
+    
     )
 }
 
